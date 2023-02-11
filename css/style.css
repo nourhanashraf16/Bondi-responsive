@@ -1,0 +1,328 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+:root{
+    --main-color:#19283f;
+    --background-color-btn: #ff3150;
+    --color-btn: #ffc400;
+}
+.navbar{
+    background-color: #19283f !important;
+    min-height:72px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    box-shadow: none !important;
+}
+.navbar-toggler{
+    color: white !important;
+    font-size: 20px;
+    border: 1px solid white !important;
+}
+.navbar .nav-link{
+    color: white !important;
+
+}
+.navbar .nav-link:hover{
+    color: #33d1cc !important;
+}
+.navbar .active{
+    color: #33d1cc !important;
+}
+.navbar .search{
+    color: #33d1cc;
+    border-left: 1px solid #33d1cc;
+}
+.navbar .btn{
+    background-color: var(--background-color-btn);
+    color: var(--color-btn);
+    font-weight: 600;
+    text-transform: capitalize;
+    border: none;
+}
+.landing{
+    background-color: var(--main-color);
+    height: calc(100vh - 72px);
+
+}
+.landing .text-content h1{
+    color: white;
+}
+.landing .text-content .btn-primary{
+    color:var(--color-btn);
+    background-color:var(--background-color-btn);
+    border: none;
+    font-weight: 600;
+}
+.our-work{
+    background-color:#eff7fa;
+}
+.our-work .title{
+position: relative;
+}
+
+.our-work .title::after{
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 2px;
+    background-color: #33d1cc;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.our-work .title p{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.our-work ul {
+    list-style: none;
+   
+}
+.our-work ul li {
+    padding: 8px 16px;
+
+}
+.our-work ul .active{
+    background-color:var(--background-color-btn);
+}
+.our-work ul .active a{
+    color: var(--color-btn) !important;
+}
+.our-work ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+.our-work ul li a:hover{
+    color:var(--background-color-btn);
+}
+.our-work .row .content{
+    margin-bottom: 16px;
+}
+.our-work .row img{
+    width: 100%;
+    border: 4px solid white;
+}
+.our-work .button{
+    display: flex;
+    justify-content: center;
+}
+.our-work .btn-primary{
+    background-color:var(--background-color-btn);
+    color:var(--color-btn);
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* about */
+.about .container .title img{
+    margin-bottom: 16px;
+}
+.about .container .title{
+    position: relative;
+}
+.about .title::after{
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 2px;
+    background-color: #33d1cc;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about .container .title p{
+    font-weight: 600;
+}
+.about .container .content {
+    max-width: 500px;
+    margin: auto;
+}
+.about .container .content p{ 
+    font-weight: 600;
+}
+.about .container .row {
+    align-items: center;
+}
+.about .container .row p{
+    font-weight: 600;
+}
+.about .container .row .btn{
+    background-color: var(--background-color-btn);
+    color: #ffc400;
+    border: none;
+    font-weight: 600;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+.about .container .row img{
+    width: 100%;
+}
+/*xs*/
+@media only screen and (max-width:576px){
+    .about .container .row .left-about{
+        text-align: center;
+    }
+}
+/*sm*/
+@media (min-width: 576px) and (max-width:768px) { 
+    .about .container .row .left-about{
+        text-align: center;
+    }
+ }
+/*end about*/
+/*start team*/
+.team{
+    background-color:#eff7fa;
+}
+.team .title{
+    text-align: center;
+}
+.team .title h1{
+color: var(--color-btn);
+}
+.team .title p{
+    font-weight: 600;
+}
+.team .box{
+    background-color: white;
+}
+.team .box img{
+    width: 100%;
+}
+.team .box h4{
+    background-color: #33d1cc;
+    padding: 16px;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+}
+.team .row blockquote{
+    text-align: center;
+    font-weight: 600;
+    padding: 16px;
+}
+/*end team*/
+/*start teach*/
+.teach .row{
+    align-items: center;
+    text-align: center;/*xsعشان الصور تيجى فالنص فالشاشة */
+}
+/*end teach*/
+/*start sec.start*/
+.start{
+    background-color: #19283f;
+}
+.start .content h2{
+    color: white;
+}
+.start .content p{
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+.start .content .btn-primary{
+    background-color: var(--background-color-btn);
+    color: var(--color-btn);
+    margin-top: 16px;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/*end sec.start  */
+/* start blog */
+.blog .title{
+    position: relative;
+}
+.blog .title img{
+    margin-bottom: 8px;
+}
+.blog .title p{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.blog .title::after{
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 2px;
+    background-color: #33d1cc;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.blog .card{
+    margin-bottom: 8px;
+}
+.blog .card img{
+    width: 100%;
+}
+.blog .card p{
+    font-weight: 600;
+}
+.blog .btn{
+    color: #ffc400;
+    background-color: #ff3150;
+    border:none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+/* end blog */
+/* start footer */
+footer{
+    background-color: #19283f;
+}
+footer .info p{
+    font-weight: 600;
+}
+footer .info .copy-right p{
+    margin-bottom: 0;
+}
+footer .info .copy-right .Graphberry{
+    color: #33d1cc;
+}
+footer .info .copy-right .Bondi{
+    color: #ffc400;
+}
+footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+footer a{
+    text-decoration: none;
+    opacity: 1;
+    color: rgba(255,255,255,.5)!important;
+    font-weight: 600;
+    line-height: 2;
+    margin-bottom: 16px;
+}
+footer h5{
+    color: white;
+
+}
+@media only screen and (max-width:768px){
+    footer{
+        text-align: center;
+    }
+}
+footer .contact .button .btn{
+    width: 100%;
+    background-color: var(--background-color-btn);
+    color: var(--color-btn) !important;
+    border: none;
+    font-weight: 600;
+}
+footer .contact .icons{
+    display: flex;
+}
+footer .contact .icons li a{
+    margin-right: 16px;
+}
+footer .contact .icons li a i{
+    font-size: 20px;
+
+}
+/* end footer */
